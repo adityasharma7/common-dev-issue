@@ -1,7 +1,7 @@
 # common-dev-issue
 The repository will have some common issues faced during developement.
 
-## Node permission issue
+## [Linux/Mac] Node permission issue
 ```
 npm WARN checkPermissions Missing write access to /usr/local/lib/node_modules
 npm ERR! code EACCES
@@ -26,3 +26,13 @@ npm ERR! the command again as root/Administrator.
 ```
 
 Solution: `sudo chown -R $USER /usr/local/lib/node_modules`
+
+
+## [Mac] Git not working
+```
+xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+
+```
+
+Solution: `xcode-select --install`
+Refer [this](https://stackoverflow.com/questions/52522565/git-is-not-working-after-macos-update-xcrun-error-invalid-active-developer-pa)
