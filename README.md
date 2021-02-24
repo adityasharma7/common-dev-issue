@@ -36,3 +36,13 @@ xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools
 
 Solution: `xcode-select --install`
 Refer [this](https://stackoverflow.com/questions/52522565/git-is-not-working-after-macos-update-xcrun-error-invalid-active-developer-pa)
+
+## [Mac] Couldn't add ios to Ionic 5 app through capacitor
+
+```
+xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
+
+```
+Solution: `sudo xcode-select -s /Applications/Xcode.app/Contents/Developer`
+Refer [this](https://github.com/nodejs/node-gyp/issues/569#issuecomment-94917337)
+
